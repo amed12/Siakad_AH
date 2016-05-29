@@ -58,6 +58,9 @@ public class DashboardPondok extends javax.swing.JFrame {
                 subuser.setEnabled(false);
                 sublog.setEnabled(true);
                 subclose.setEnabled(true);
+                sublaporansantri.setEnabled(true);
+                sublaporanguru.setEnabled(false);
+                sublaporanall.setEnabled(true);
             } else if (kodee == 12) {
                 menusiswa.setEnabled(false);
                 menumapel.setEnabled(false);
@@ -109,6 +112,7 @@ public class DashboardPondok extends javax.swing.JFrame {
             System.err.println(exc.getMessage());
         }
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -141,11 +145,11 @@ public class DashboardPondok extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         menureport = new javax.swing.JMenu();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
+        sublaporansantri = new javax.swing.JMenuItem();
+        sublaporanguru = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem15 = new javax.swing.JMenuItem();
+        sublaporanall = new javax.swing.JMenuItem();
         menusetting = new javax.swing.JMenu();
         subuser = new javax.swing.JMenuItem();
         sublog = new javax.swing.JMenuItem();
@@ -312,34 +316,34 @@ public class DashboardPondok extends javax.swing.JFrame {
         menureport.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Medium 003.png"))); // NOI18N
         menureport.setText("Laporan");
 
-        jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/viewreport toolbar.png"))); // NOI18N
-        jMenuItem13.setText("Santri");
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+        sublaporansantri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/viewreport toolbar.png"))); // NOI18N
+        sublaporansantri.setText("Santri");
+        sublaporansantri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
+                sublaporansantriActionPerformed(evt);
             }
         });
-        menureport.add(jMenuItem13);
+        menureport.add(sublaporansantri);
 
-        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/viewreport toolbar.png"))); // NOI18N
-        jMenuItem14.setText("Ustad");
-        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+        sublaporanguru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/viewreport toolbar.png"))); // NOI18N
+        sublaporanguru.setText("Ustad");
+        sublaporanguru.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem14ActionPerformed(evt);
+                sublaporanguruActionPerformed(evt);
             }
         });
-        menureport.add(jMenuItem14);
+        menureport.add(sublaporanguru);
         menureport.add(jSeparator2);
         menureport.add(jSeparator3);
 
-        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Finddata toolbar.png"))); // NOI18N
-        jMenuItem15.setText("Nilai");
-        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+        sublaporanall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Finddata toolbar.png"))); // NOI18N
+        sublaporanall.setText("Nilai");
+        sublaporanall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem15ActionPerformed(evt);
+                sublaporanallActionPerformed(evt);
             }
         });
-        menureport.add(jMenuItem15);
+        menureport.add(sublaporanall);
 
         jMenuBar1.add(menureport);
 
@@ -555,19 +559,21 @@ public class DashboardPondok extends javax.swing.JFrame {
         new DataUstad().setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
-    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
-        dispose();
-        
-        //new CariDataSiswa().setVisible(true);
-    }//GEN-LAST:event_jMenuItem15ActionPerformed
+    private void sublaporanallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sublaporanallActionPerformed
+        Nilai nilai = new Nilai();
+        try {
+            nilai.tampiltabel();
+        } catch (PrinterException ex) {
+            Logger.getLogger(DashboardPondok.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+    }//GEN-LAST:event_sublaporanallActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        //dispose();
         new Nilai().setVisible(true);
 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+    private void sublaporansantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sublaporansantriActionPerformed
         /*
         try{
             Koneksi_DB objkoneksi = new Koneksi_DB();
@@ -591,9 +597,9 @@ public class DashboardPondok extends javax.swing.JFrame {
         } catch (PrinterException ex) {
             Logger.getLogger(DashboardPondok.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jMenuItem13ActionPerformed
+    }//GEN-LAST:event_sublaporansantriActionPerformed
 
-    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+    private void sublaporanguruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sublaporanguruActionPerformed
         /*try{
             Koneksi_DB objkoneksi = new Koneksi_DB();
             Connection con =objkoneksi.bukakoneksi();
@@ -615,12 +621,26 @@ public class DashboardPondok extends javax.swing.JFrame {
         } catch (PrinterException ex) {
             Logger.getLogger(DashboardPondok.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jMenuItem14ActionPerformed
+    }//GEN-LAST:event_sublaporanguruActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        try {
+        UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
+
+        SwingUtilities.updateComponentTreeUI(new DashboardPondok());
+        SwingUtilities.updateComponentTreeUI(new DaftarPelajaranDiniyah());
+        SwingUtilities.updateComponentTreeUI(new DataSiswa());
+        SwingUtilities.updateComponentTreeUI(new DataUstad());
+        SwingUtilities.updateComponentTreeUI(new InputKelasDiniyah());
+        SwingUtilities.updateComponentTreeUI(new Login());
+        SwingUtilities.updateComponentTreeUI(new Nilai());
+        SwingUtilities.updateComponentTreeUI(new Setting());
+    } catch (Exception e){
+ 
+    }
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new DashboardPondok().setVisible(true);
@@ -638,9 +658,6 @@ public class DashboardPondok extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
@@ -658,6 +675,9 @@ public class DashboardPondok extends javax.swing.JFrame {
     private javax.swing.JMenu menusetting;
     private javax.swing.JMenu menusiswa;
     private javax.swing.JMenuItem subclose;
+    private javax.swing.JMenuItem sublaporanall;
+    private javax.swing.JMenuItem sublaporanguru;
+    private javax.swing.JMenuItem sublaporansantri;
     private javax.swing.JMenuItem sublog;
     private javax.swing.JMenuItem subuser;
     private javax.swing.JLabel tanggal;

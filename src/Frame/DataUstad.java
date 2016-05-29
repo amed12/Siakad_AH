@@ -140,6 +140,23 @@ public class DataUstad extends javax.swing.JFrame {
             System.out.println("gagal query ini"+e);
         }
     }
+    void tampiltabelnilaiampu() throws PrinterException{
+        try
+        {
+            Koneksi_DB objkoneksi = new Koneksi_DB();
+            Connection con = objkoneksi.bukakoneksi();
+            Statement st = con.createStatement();
+            String sql = "select * from guru";
+            ResultSet set = st.executeQuery(sql);
+            HasilKeluaranTabel model = new HasilKeluaranTabel (set);
+            tabel.setModel (model);
+            tabel.print();
+        }
+        catch (SQLException e)
+        {
+            System.out.println("gagal query ini"+e);
+        }
+    }
     void tampiltabel()
     {
         try

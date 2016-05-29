@@ -41,7 +41,7 @@
                           </Group>
                           <Component id="jScrollPane1" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="750" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="663" max="-2" attributes="0"/>
                       <Component id="foto" min="-2" max="-2" attributes="1"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -58,57 +58,41 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jenis" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="alamat" alignment="0" max="32767" attributes="1"/>
-                                          <Component id="nama" alignment="0" max="32767" attributes="1"/>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="ayah" linkSize="1" min="-2" pref="152" max="-2" attributes="1"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="kerjaayah" linkSize="2" pref="141" max="32767" attributes="1"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="tptlhir" linkSize="1" min="-2" pref="176" max="-2" attributes="1"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="tgllhir" linkSize="2" min="-2" pref="141" max="-2" attributes="1"/>
-                                                  </Group>
-                                                  <Component id="telp" linkSize="1" alignment="0" min="-2" max="-2" attributes="1"/>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="ibu" linkSize="1" pref="176" max="32767" attributes="1"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="kerjaibu" linkSize="2" min="-2" pref="139" max="-2" attributes="1"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="alamatwali" linkSize="1" pref="176" max="32767" attributes="1"/>
-                                                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                                                      <Component id="rapot" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="nis" min="-2" pref="85" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="fotoo" max="32767" attributes="1"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="carifoto" alignment="0" max="32767" attributes="1"/>
-                                  <Component id="txtfoto" alignment="0" min="-2" pref="118" max="-2" attributes="1"/>
-                              </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nis" min="-2" pref="85" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
+                              <Component id="niscombo" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="alamat" alignment="0" pref="564" max="32767" attributes="1"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="ayah" linkSize="1" min="-2" pref="152" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="kerjaayah" linkSize="2" pref="141" max="32767" attributes="1"/>
+                              </Group>
+                              <Component id="telp" linkSize="1" alignment="0" min="-2" max="-2" attributes="1"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="ibu" linkSize="1" pref="176" max="32767" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="kerjaibu" linkSize="2" min="-2" pref="139" max="-2" attributes="1"/>
+                              </Group>
+                              <Component id="alamatwali" linkSize="1" alignment="0" pref="176" max="32767" attributes="1"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="tptlhir" linkSize="1" min="-2" pref="176" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="tgllhir" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="nama" alignment="0" max="32767" attributes="1"/>
+                          </Group>
+                          <Component id="jenis" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fotoo" min="-2" max="-2" attributes="1"/>
+                          <Component id="txtfoto" min="-2" pref="118" max="-2" attributes="1"/>
+                          <Component id="carifoto" min="-2" pref="193" max="-2" attributes="1"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -116,67 +100,52 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="410" pref="410" max="410" attributes="0"/>
-              <Component id="foto" min="-2" pref="115" max="-2" attributes="0"/>
-              <EmptySpace pref="175" max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nis" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="niscombo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nama" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="alamat" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="11" pref="11" max="11" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="nis" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="nama" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="alamat" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="tgllhir" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="tptlhir" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="kerjaayah" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ayah" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ibu" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="kerjaibu" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="alamatwali" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="rapot" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="telp" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tptlhir" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
-                      <Component id="txtfoto" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="carifoto" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="fotoo" alignment="0" min="-2" max="-2" attributes="1"/>
+                  <Component id="tgllhir" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="kerjaayah" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ayah" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ibu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="kerjaibu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="alamatwali" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="telp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -190,6 +159,23 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="back" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="410" pref="410" max="410" attributes="0"/>
+                      <Component id="foto" min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fotoo" min="-2" max="-2" attributes="1"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtfoto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="carifoto" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -283,11 +269,6 @@
     <Component class="javax.swing.JTextField" name="telp">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="tgllhir">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="YYYY-MM-DD"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="kerjaayah">
@@ -504,13 +485,25 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="rapot">
+    <Component class="com.toedter.calendar.JDateChooser" name="tgllhir">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="niscombo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Rapot"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rapotActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="niscomboActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
